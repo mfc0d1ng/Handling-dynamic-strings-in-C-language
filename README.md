@@ -9,7 +9,7 @@ You can link the library to your C project as follows: gcc example.c -lstr <br>
 And don't forget to include string.h, note that string.h depends on string_details.h so keep both in the same directory.
 <br>
 <h2> Examples </h2>
-<br>
+
 * Constructing string object
 <pre style="color: rgb(243, 243, 232); background-color: #000; font-size: large; font-weight: bold; width: 600px;">
         <code class="language-c">
