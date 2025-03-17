@@ -20,10 +20,10 @@ And don't forget to include string.h, note that string.h depends on string_detai
 
 int main()
 {
-    /* Construct s1 */
+    /* Construct the string s1 */
     string s1 = string_new();
 
-    /* Construct s2 */
+    /* Construct the string s2 */
     string s2 = string_from("Hello world");
 
     /* Append multiple characters to the string s1 */
