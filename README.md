@@ -11,8 +11,7 @@ And don't forget to include string.h, note that string.h depends on string_detai
 <h2> Examples </h2>
 
 * Example A:
-<pre style="color: rgb(243, 243, 232); background-color: #000; font-size: large; font-weight: bold; width: 650px;">
-<code class="language-c">
+<pre> <code class="language-c">
 #include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 #include "string.h"
