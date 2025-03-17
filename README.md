@@ -10,46 +10,46 @@ And don't forget to include string.h, note that string.h depends on string_detai
 <br>
 <h2> Examples </h2>
 
-* Example1:
-    <pre style="color: rgb(243, 243, 232); background-color: #000; font-size: large; font-weight: bold; width: 650px;">
-        <code class="language-c">
-        #include &lt;stdio.h&gt;
-        #include &lt;stdlib.h&gt;
-        #include "string.h"
-        
-        int main()
-        {
-            /* Construct s1 */
-            string s1 = string_new();
-        
-            /* Construct s2 */
-            string s2 = string_from("Hello world");
-        
-            /* Append multiple characters to the string s1 */
-            string_push(&s1, 'B');
-            string_push(&s1, 'C');
-            string_push(&s1, 'D');
-            string_push(&s1, 'E');
-        
-            /* Insert character 'A' at the beginning of the string s1 */
-            string_insert(&s1, string_begin(&s1), 'A');
-        
-            /* Append a string to the string s2 */
-            string_append(&s2, " 2025");
-        
-            /* Pointer to the contents of the string s1 */
-            const char* content1 = string_c_str(&s1);
-            printf("s1 = %s\n", content1);
-            /* Pointer to the contents of the string s2 */
-            const char* content2 = string_c_str(&s2);
-            printf("s2 = %s\n", content2);
-        
-            /* Erase s1 */
-            string_destructor(&s1);
-            /* Erase s2 */
-            string_destructor(&s2);
-                        
-            return EXIT_SUCCESS;
-        }
-        </code>
-    </pre>
+* Example A:
+<pre style="color: rgb(243, 243, 232); background-color: #000; font-size: large; font-weight: bold; width: 650px;">
+    <code class="language-c">
+    #include &lt;stdio.h&gt;
+    #include &lt;stdlib.h&gt;
+    #include "string.h"
+    
+    int main()
+    {
+        /* Construct s1 */
+        string s1 = string_new();
+    
+        /* Construct s2 */
+        string s2 = string_from("Hello world");
+    
+        /* Append multiple characters to the string s1 */
+        string_push(&s1, 'B');
+        string_push(&s1, 'C');
+        string_push(&s1, 'D');
+        string_push(&s1, 'E');
+    
+        /* Insert character 'A' at the beginning of the string s1 */
+        string_insert(&s1, string_begin(&s1), 'A');
+    
+        /* Append a string to the string s2 */
+        string_append(&s2, " 2025");
+    
+        /* Pointer to the contents of the string s1 */
+        const char* content1 = string_c_str(&s1);
+        printf("s1 = %s\n", content1);
+        /* Pointer to the contents of the string s2 */
+        const char* content2 = string_c_str(&s2);
+        printf("s2 = %s\n", content2);
+    
+        /* Erase s1 */
+        string_destructor(&s1);
+        /* Erase s2 */
+        string_destructor(&s2);
+                    
+        return EXIT_SUCCESS;
+    }
+    </code>
+</pre>
