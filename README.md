@@ -29,8 +29,6 @@ int main()
     /* Append multiple characters to the string s1 */
     string_push(&s1, 'B');
     string_push(&s1, 'C');
-    string_push(&s1, 'D');
-    string_push(&s1, 'E');
 
     /* Insert character 'A' at the beginning of the string s1 */
     string_insert(&s1, string_begin(&s1), 'A');
