@@ -11,22 +11,21 @@ And don't forget to include string.h, note that string.h depends on string_detai
 <h2> Examples </h2>
 
 * Constructing string object
-<pre style="color: rgb(243, 243, 232); background-color: #000; font-size: large; font-weight: bold; width: 600px;">
+    <pre style="color: rgb(243, 243, 232); background-color: #000; font-size: large; font-weight: bold; width: 600px;">
         <code class="language-c">
-            #include &lt;stdio.h&gt;
-            #include &lt;stdlib.h&gt;
-            #include "string.h"
-            
-            int main()
-            {
-                /* Construct s1 */
-                string s1 = string_new();
-            
-                /* Construct s2 */
-                string s2 = string_from("Hello world");
-                            
-                return EXIT_SUCCESS;
-            }
+        #include &lt;stdio.h&gt;
+        #include &lt;stdlib.h&gt;
+        #include "string.h"
+        
+        int main()
+        {
+            /* Construct s1 */
+            string s1 = string_new();
+        
+            /* Construct s2 */
+            string s2 = string_from("Hello world");
+                        
+            return EXIT_SUCCESS;
+        }
         </code>
     </pre>
-    
