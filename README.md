@@ -61,9 +61,26 @@ int main()
 #include &lt;stdlib.h&gt;
 #include "string.h"
 
+#define $(__s)   string_from(__s)
+
 int main()
 {
-                    
+    /* Create array of strings (fruits) */
+    string fruits[] = {$("strawberry"), $("apple"), $("pineapple"), $("banana")};
+
+    /* Sort array fruits */
+    qsort(fruits, sizeof(fruits)/sizeof(string), sizeof(string), string_ascending);
+
+    for (size_t i = 0; i < sizeof(fruits)/sizeof(string); i++)
+    {
+        /* Iterator into array fruits */
+        string* it = fruits + i;
+        /* Print the string referenced by the iterator 'it' */
+        puts(string_c_str(it));
+        /* Erase the string referenced by the iterator 'it' */
+        string_destructor(it);
+    }
+    
     return EXIT_SUCCESS;
 }
 </code>
