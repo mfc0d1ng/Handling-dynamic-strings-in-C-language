@@ -52,3 +52,19 @@ int main()
 }
 </code>
 </pre>
+
+* Example B:
+
+<pre>
+<code class="language-c">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include "string.h"
+
+int main()
+{
+                    
+    return EXIT_SUCCESS;
+}
+</code>
+</pre>
