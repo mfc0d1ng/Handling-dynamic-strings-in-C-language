@@ -36,10 +36,10 @@ int main()
     /* Append a string to the string s2 */
     string_append(&s2, " 2025");
 
-    /* Pointer to the contents of the string s1 */
+    /* Getting a pointer to the contents of the string s1 */
     const char* content1 = string_c_str(&s1);
     printf("s1 = %s\n", content1);
-    /* Pointer to the contents of the string s2 */
+    /* Getting a pointer to the contents of the string s2 */
     const char* content2 = string_c_str(&s2);
     printf("s2 = %s\n", content2);
 
