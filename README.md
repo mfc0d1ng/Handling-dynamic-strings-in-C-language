@@ -70,7 +70,8 @@ int main()
 
     /* Sort array fruits */
     qsort(fruits, sizeof(fruits)/sizeof(string), sizeof(string), string_ascending);
-
+    
+    /* Print array fruits */
     for (size_t i = 0; i < sizeof(fruits)/sizeof(string); i++)
     {
         /* Iterator into array fruits */
