@@ -1,7 +1,7 @@
 # Handling dynamic strings in C language
 A shared library which provides a set of functions for handling dynamic strings in C.
 <h2>How to download?</h2>
-You can download it <a href="https://github.com/user-attachments/files/19319193/libstr.zip">here</a>
+You can download it <a href="https://github.com/user-attachments/files/19350473/libstr.zip">here</a>
 <h2>How to install?</h2>
 Move libstr.so to /usr/lib
 <h2>How to link?</h2>
