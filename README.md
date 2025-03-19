@@ -20,26 +20,26 @@ And don't forget to include string.h, note that string.h depends on string_detai
 
 int main()
 {
-    /* Construct the string s1 */
+    /* Construct s1 */
     string s1 = string_new();
 
-    /* Construct the string s2 */
+    /* Construct s2 */
     string s2 = string_from("Hello world");
 
-    /* Append multiple characters to the string s1 */
+    /* Append multiple characters to s1 */
     string_push(&s1, 'B');
     string_push(&s1, 'C');
 
-    /* Insert character 'A' at the beginning of the string s1 */
+    /* Insert character 'A' at the beginning of s1 */
     string_insert(&s1, string_begin(&s1), 'A');
 
-    /* Append a string to the string s2 */
+    /* Append a string to s2 */
     string_append(&s2, " 2025");
 
-    /* Getting a pointer to the contents of the string s1 */
+    /* Getting a pointer to the contents of s1 */
     const char* content1 = string_c_str(&s1);
     printf("s1 = %s\n", content1);
-    /* Getting a pointer to the contents of the string s2 */
+    /* Getting a pointer to the contents of s2 */
     const char* content2 = string_c_str(&s2);
     printf("s2 = %s\n", content2);
 
