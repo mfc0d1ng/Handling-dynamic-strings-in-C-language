@@ -5,7 +5,7 @@ You can download it <a href="https://github.com/user-attachments/files/19351856/
 <h2>How to install?</h2>
 Unzip the downloaded file and move libstr.so to /usr/lib
 <h2>How to link?</h2>
-You can link the library to your C project as follows: gcc example.c -lstr <br>
+You can link the library to your C project as follows: gcc example.c -l str <br>
 And don't forget to include string.h, note that string.h depends on string_details.h so keep both in the same directory.
 <br>
 <h2> Examples </h2>
