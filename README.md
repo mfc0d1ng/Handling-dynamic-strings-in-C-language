@@ -30,8 +30,8 @@ int main()
     string s2 = string_from("Hello world");
 
     /* Append multiple characters to s1 */
-    string_push(&s1, 'B');
-    string_push(&s1, 'C');
+    string_push_back(&s1, 'B');
+    string_push_back(&s1, 'C');
 
     /* Insert character 'A' at the beginning of s1 */
     string_insert(&s1, string_begin(&s1), 'A');
