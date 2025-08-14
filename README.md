@@ -47,9 +47,9 @@ int main()
     printf("s2 = %s\n", content2);
 
     /* Erase s1 */
-    string_destructor(&s1);
+    string_destroy(&s1);
     /* Erase s2 */
-    string_destructor(&s2);
+    string_destroy(&s2);
                 
     return EXIT_SUCCESS;
 }
@@ -82,7 +82,7 @@ int main()
         /* Print the string referenced by the iterator 'it' */
         puts(string_c_str(it));
         /* Erase the string referenced by the iterator 'it' */
-        string_destructor(it);
+        string_destroy(it);
     }
     
     return EXIT_SUCCESS;
